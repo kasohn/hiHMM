@@ -166,7 +166,7 @@ We also provide the auxillary files you will need to recreate our analysis, incl
 
 ## <a name='#license'></a>License
 
-```
+
 The MIT License (MIT)
 
 Copyright (c) 2015 Kyung-Ah Sohn 
@@ -188,7 +188,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-```
 
 <div style="display:block;margin-right:auto;text-align:right">
 <a href="http://www.ajou.ac.kr/en/index.jsp" rel="nofollow"><img border="0" height="35" src="https://sites.google.com/site/kasohn/_/rsrc/1391695588708/software/ajou3.gif?height=35" /></a>
