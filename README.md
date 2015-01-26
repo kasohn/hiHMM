@@ -3,7 +3,7 @@
 ## Table of Content
 
 * [About](#about)
-* [An Instruction of how to use hiHMM as an example](#an-instruction-of-how-to-use-hiHMM-as-an-example)
+* [An Instruction of how to use hiHMM as an example](#an-instruction-of-how-to-use-hihmm-as-an-example)
 	* [Step 1: Create hiHMM input files](#inst1)
 	* [Step 2: Remove unmappable regions using hiHMM_Pre1.R](#inst2)
 	* [Step 3: Run hiHMM using driv_hihmm.m](#inst3)
