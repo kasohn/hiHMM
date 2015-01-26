@@ -1,10 +1,10 @@
-## Introduction
+# hiHMM
+
+## About
 
 **hiHMM (hierarchically-linked infinite hidden Markov model)** is a new Bayesian non-parametric method to jointly infer chromatin state maps in multiple genomes (different cell types, developmental stages, even multiple species) using genome-wide histone modification data. 
 
-## Instruction
-
-### Directory Structure
+## An Instruction of how to use hiHMM as an example
 
 Each analysis or experiment should have its input and output files contained within a single folder. Note that the chromosome names in the input files should be the same as those in the mappability files and chromosome lengths files. A separate output folder for each model can also be used instead, e.g. `output_model1` and `output_model2`.
 
