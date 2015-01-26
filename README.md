@@ -20,7 +20,7 @@
 
 **hiHMM (hierarchically-linked infinite hidden Markov model)** is a new Bayesian non-parametric method to jointly infer chromatin state maps in multiple genomes (different cell types, developmental stages, even multiple species) using genome-wide histone modification data. 
 
-## An Instruction of how to use hiHMM as an example
+## <a name='#inst'></a> An Instruction of how to use hiHMM as an example
 
 Each analysis or experiment should have its input and output files contained within a single folder. Note that the chromosome names in the input files should be the same as those in the mappability files and chromosome lengths files. A separate output folder for each model can also be used instead, e.g. `output_model1` and `output_model2`.
 
@@ -39,7 +39,7 @@ The R scripts use a number of packages, which are automatically detected and ins
 * `hiHMM_Post1.r`: [gplots](http://cran.r-project.org/web/packages/gplots/index.html), [RColorBrewer](http://cran.r-project.org/web/packages/RColorBrewer/index.html)
 * `hiHMM_Post2.r`: [IRanges](http://bioconductor.org/packages/2.3/bioc/html/IRanges.html)
 
-### Step 1: Create hiHMM input files
+### <a name='#inst1'></a>Step 1: Create hiHMM input files
 
 There should be one file for each condition and each chromosome, and should be named as `condition_chromosome.txt`. Each file should contain all the ChIP-seq tracks (e.g. histone modifications, transcription factors etc).
 
@@ -49,7 +49,7 @@ The sample files provided contain the signal values for 200 bp bins and in the f
 
 These raw files should be stored in `sample_analysis/Unmapped_input_files`.
 
-### Step 2: Remove unmappable regions using hiHMM_Pre1.R
+### <a name='#inst2'></a>Step 2: Remove unmappable regions using hiHMM_Pre1.R
 
 Unmappable regions are removed from the hiHMM input files using the information contained in the `sample_analysis/Mappability_files` folder, which contains the **mappable** regions for each chromosome for each condition. These files are .bed files in the format `chromosome\tstart position\tend position`. For example, for fly: `mappable.dm3.lucy.bed`.
 
@@ -69,7 +69,7 @@ To run this script, users need to specify:
 
 The files with the unmappable regions removed are written to `sample_analysis/Mapped_input_files`.
 
-### Step 3: Run hiHMM using driv_hihmm.m
+### <a name='#inst3'></a>Step 3: Run hiHMM using driv_hihmm.m
 
 The analysis folder, input and output folders need to be specified. Parameters such as the conditions,
 mapped file names, chromosome labels, <u>model number</u>, <u>bin size</u> (same as the input files e.g. 200 bp), etc, also need to be specified.
@@ -78,7 +78,7 @@ In the example given, the results from hiHMM, including the chromatin annotation
 `hihmm.model2.K7.fly.bed` for fly) and emission/transition matrices, will be written to the
 `sample_analysis/output` folder.
 
-### Step 4: Annotate states in the emission matrix
+### <a name='#inst4'></a>Step 4: Annotate states in the emission matrix
 
 The emission matrix (`sample_analysis/output/train-hihmm-model2.emission.csv`) will contain the **K**
 chromatin states along the rows and the ChIP-seq tracks used along the columns.
@@ -111,7 +111,7 @@ second for **Fly (F)**, as specified by the order in the **condition** parameter
 **Important!**: The emission matrix with annotated states needs to be saved with the `_named` suffix, i.e.
 `train-hihmm-model2.emission_named.csv`.
 
-### Step 5: Plot the emission and transition matrices and recolour the output bed files using
+### <a name='#inst5'></a>Step 5: Plot the emission and transition matrices and recolour the output bed files using
 hiHMM_Post1.R
 
 The emission and transition matrices can be plotted as PDF files using this script. For Model 1, an
@@ -134,7 +134,7 @@ Examples of plotted emission and transition matrices for the two models are prov
 
 The chromatin state segments in the .bed files will also be recoloured according to the same colouring pattern in the emission matrix. These files will have the **recoloured** suffix, for example, `hihmm.model2.K7.fly.bed` will become `hihmm.model2.K7.fly.recoloured.bed` and stored in the same `sample_analysis/output` folder.
 
-### Step 6: Reintroduce unmappable regions as a new state using hiHMM_Post2.r
+### <a name='#inst6'></a>Step 6: Reintroduce unmappable regions as a new state using hiHMM_Post2.r
 The unmappable regions that were removed in Step 2 prior to running hiHMM will now be added back to the `.bed` files as **State 0**.
 To run this script, users need to specify:
 * the working directory to be the hiHMM output folder (subfolder in the analysis folder)
@@ -146,25 +146,25 @@ To run this script, users need to specify:
 * **chr_lengths**: the chromosome lengths files along with the same species/condition ID i.e. “fly” and “worm”
 The output files will have the `ReMapped` suffix, so for example, `hihmm.model2.K7.fly.recoloured.bed` will become `hihmm.model2.K7.fly.recoloured.ReMapped.bed` and written to the `sample_analysis/output/ReMapped` folder.
 
-### Results
+### <a name='#inst7'></a>Results
 
 The following image shows a screenshot of the IGV Genome Browser for fly showing the different types of `.bed` files that are produced from Steps 3, 5 and 6 respectively.
 
 ![](https://dl.dropboxusercontent.com/u/5327300/hihmm/instruction/fig8.png)
 
-## References
+## <a name='#ref'></a>References
 
-### Download the raw data
+### <a name='#raw'></a> Download the raw data
 Here is a link to the EncodeX browser where you can download the normalized ChIP-Seq data that was used in our analysis, and much more!
 
 [EncodeX browser](http://encode-x.med.harvard.edu/data_sets/chromatin)
 
-### Fly and worm files
+### <a name='#file'></a>Fly and worm files
 
 We also provide the auxillary files you will need to recreate our analysis, including chromosome lengths and unmappable regions.
 [Download aux. files](https://sites.google.com/site/kasohn/files/fly_worm_aux.zip?attredirects=0&d=1)
 
-## License
+## <a name='#license'></a>License
 
 ```
 The MIT License (MIT)
