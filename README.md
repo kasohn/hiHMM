@@ -16,7 +16,7 @@
 	* [Fly and worm files](#file)
 * [License](#license)
 	
-## <a name='#about'></a>About
+## About
 
 **hiHMM (hierarchically-linked infinite hidden Markov model)** is a new Bayesian non-parametric method to jointly infer chromatin state maps in multiple genomes (different cell types, developmental stages, even multiple species) using genome-wide histone modification data. 
 
