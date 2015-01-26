@@ -1,5 +1,22 @@
 # hiHMM
 
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [hiHMM](#)
+	- [About](#)
+	- [An Instruction of how to use hiHMM as an example](#)
+		- [Step 1: Create hiHMM input files](#)
+		- [Step 2: Remove unmappable regions using hiHMM_Pre1.R](#)
+		- [Step 3: Run hiHMM using driv_hihmm.m](#)
+		- [Step 4: Annotate states in the emission matrix](#)
+		- [Step 5: Plot the emission and transition matrices and recolour the output bed files using](#)
+		- [Step 6: Reintroduce unmappable regions as a new state using hiHMM_Post2.r](#)
+		- [Results](#)
+	- [References](#)
+		- [Download the raw data](#)
+		- [Fly and worm files](#)
+	- [License](#)
+	
 ## About
 
 **hiHMM (hierarchically-linked infinite hidden Markov model)** is a new Bayesian non-parametric method to jointly infer chromatin state maps in multiple genomes (different cell types, developmental stages, even multiple species) using genome-wide histone modification data. 
