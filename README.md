@@ -16,7 +16,7 @@ Each analysis or experiment should have its input and output files contained wit
     * Mappability_files
     * Mapped_input_files (output from `hiHMM_Pre1.R` in **Step 2**)
     * Unmapped_input_files
-    * Output (output from `driv_hiHMM.m` in **Step 3)))
+    * Output (output from `driv_hiHMM.m` in **Step 3**)
 
 The R scripts use a number of packages, which are automatically detected and installed by the scripts. These include:
 * `hiHMM_Pre1.r`: [IRanges](http://bioconductor.org/packages/2.3/bioc/html/IRanges.html)
