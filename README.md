@@ -132,9 +132,47 @@ The output files will have the `ReMapped` suffix, so for example, `hihmm.model2.
 
 ### Results
 
-The following image shows a screenshot of the IGV Genome Browser for fly showing the different types of .bed files that are produced from Steps 3, 5 and 6 respectively.
+The following image shows a screenshot of the IGV Genome Browser for fly showing the different types of `.bed` files that are produced from Steps 3, 5 and 6 respectively.
 
 ![](https://dl.dropboxusercontent.com/u/5327300/hihmm/instruction/fig8.png)
+
+## References
+
+### Download the raw data
+Here is a link to the EncodeX browser where you can download the normalized ChIP-Seq data that was used in our analysis, and much more!
+
+[EncodeX browser](http://encode-x.med.harvard.edu/data_sets/chromatin)
+
+### Fly and worm files
+
+We also provide the auxillary files you will need to recreate our analysis, including chromosome lengths and unmappable regions.
+[Download aux. files](https://sites.google.com/site/kasohn/files/fly_worm_aux.zip?attredirects=0&d=1)
+
+## License
+
+```
+The MIT License (MIT)
+
+Copyright (c) 2015 Kyung-Ah Sohn 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```
 
 <div style="display:block;margin-right:auto;text-align:right">
 <a href="http://www.ajou.ac.kr/en/index.jsp" rel="nofollow"><img border="0" height="35" src="https://sites.google.com/site/kasohn/_/rsrc/1391695588708/software/ajou3.gif?height=35" /></a>
