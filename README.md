@@ -3,6 +3,7 @@
 ## Table of Content
 
 * [About](#about)
+* [Installation](#installation)
 * [An Instruction of how to use hiHMM as an example](#an-instruction-of-how-to-use-hihmm-as-an-example)
 	* [Step 1: Create hiHMM input files](#step-1-create-hihmm-input-files)
 	* [Step 2: Remove unmappable regions using hiHMM_Pre1.R](#step-2-remove-unmappable-regions-using-hihmm_pre1r)
@@ -19,6 +20,18 @@
 ## About
 
 **hiHMM (hierarchically-linked infinite hidden Markov model)** is a new Bayesian non-parametric method to jointly infer chromatin state maps in multiple genomes (different cell types, developmental stages, even multiple species) using genome-wide histone modification data. 
+
+## Installation
+
+Here is the suggested and easiest way to install hiHMM by the following instruction.
+
+1. Download master file of the repository from the link: https://github.com/kasohn/hiHMM/archive/master.zip
+2. unzip the master file into your machine.
+
+In another way, you can fetch this repository using `git` command.
+```
+git clone https://github.com/kasohn/hiHMM.git
+```
 
 ## An Instruction of how to use hiHMM as an example
 
