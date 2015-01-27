@@ -38,7 +38,9 @@ git clone https://github.com/kasohn/hiHMM.git
 Each analysis or experiment should have its input and output files contained within a single folder. Note that the chromosome names in the input files should be the same as those in the mappability files and chromosome lengths files. A separate output folder for each model can also be used instead, e.g. `output_model1` and `output_model2`.
 
 * hiHMM
- * `driv_hiHMM.m` (script to run hiHMM)
+ * run.sh (batch file to run all scripts at once)
+ * MATLAB_script
+  * `driv_hiHMM.m` (script to run hiHMM)
  * R_scripts
   * sample_analysis
     * Chromosome_Lengths

@@ -1,4 +1,3 @@
-
 function [data, locs, markers, chrs] = read_data( list_files, info )
 
 %list_files = { 'worm_chrI.txt', 'worm_chrII.txt','worm_chrI.txt' };

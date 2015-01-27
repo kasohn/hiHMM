@@ -26,7 +26,7 @@ nproc = 1;    % number of parallel processing nodes
 % 
 
 %%% set the directory where the input and output file folders are located for the current analysis
-analysis_folder = './sample_analysis/';
+analysis_folder = '../sample_analysis/';
 indir = 'Mapped_input_files/'; % input directory
 
 %%% data parameters  
@@ -134,5 +134,3 @@ toc;
 
 % make sure to close matlabpools if any error occurs  (release workers)
 %matlabpool close;   
-
-
