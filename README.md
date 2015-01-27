@@ -4,8 +4,8 @@
 
 * [About](#about)
 * [Installation](#installation)
-* [A brief instruction of how to run hiHMM using bash script](#a-breif-instruction-of-how-to-run-hihmm-using-bash-script)
-* [Detailed Instruction of how to use hiHMM as an example](#detailed-instruction-of-how-to-use-hihmm-as-an-example)
+* [A brief instruction of how to run hiHMM using bash script](#a-brief-instruction-of-how-to-run-hihmm-using-bash-script)
+* [More detailed instruction of how to use hiHMM as an example](#more-detailed-instruction-of-how-to-run-hihmm-as-an-example)
 	* [Step 1: Create hiHMM input files](#step-1-create-hihmm-input-files)
 	* [Step 2: Remove unmappable regions using hiHMM_Pre1.R](#step-2-remove-unmappable-regions-using-hihmm_pre1r)
 	* [Step 3: Run hiHMM using driv_hihmm.m](#step-3-run-hihmm-using-driv_hihmmm)
@@ -45,7 +45,7 @@ git clone https://github.com/kasohn/hiHMM.git
 Each analysis or experiment should have its input and output files contained within a single folder. Note that the chromosome names in the input files should be the same as those in the mappability files and chromosome lengths files. A separate output folder for each model can also be used instead, e.g. `output_model1` and `output_model2`.
 
 * hiHMM
- * run_pre.sh (batch file to run pre-processing and hiHMM scripts at once)
+ * run_pre_main.sh (batch file to run pre-processing and hiHMM scripts at once)
  * run_post.sh (batch file to run post-processing scripts at once)
  * MATLAB_script
    * `driv_hiHMM.m` (script to run hiHMM)
