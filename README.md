@@ -34,19 +34,11 @@ In another way, you can fetch this repository using `git` command.
 git clone https://github.com/kasohn/hiHMM.git
 ```
 
-## A brief instruction of how to run hiHMM using bash script
-
-1. Run `run_pre_main.sh` bash script.
-2. Making an named emissions file for post-processing.
-3. Run `run_post.sh` bash script.
-
-## More detailed instruction of how to run hiHMM as an example
+## An instruction of how to run hiHMM as an example
 
 Each analysis or experiment should have its input and output files contained within a single folder. Note that the chromosome names in the input files should be the same as those in the mappability files and chromosome lengths files. A separate output folder for each model can also be used instead, e.g. `output_model1` and `output_model2`.
 
 * hiHMM
- * run_pre_main.sh (batch file to run pre-processing and hiHMM scripts at once)
- * run_post.sh (batch file to run post-processing scripts at once)
  * MATLAB_script
    * `driv_hiHMM.m` (script to run hiHMM)
  * R_scripts
@@ -57,7 +49,8 @@ Each analysis or experiment should have its input and output files contained wit
     * Unmapped_input_files
     * Output (output from `driv_hiHMM.m` in **Step 3**)
 
-The R scripts use a number of packages, which are automatically detected and installed by the scripts. These include:
+The R scripts use a number of packages, which are automatically detected and will need to be installed if not already done so by the user. These include:
+
 * `hiHMM_Pre1.r`: [IRanges](http://bioconductor.org/packages/2.3/bioc/html/IRanges.html)
 * `hiHMM_Post1.r`: [gplots](http://cran.r-project.org/web/packages/gplots/index.html), [RColorBrewer](http://cran.r-project.org/web/packages/RColorBrewer/index.html)
 * `hiHMM_Post2.r`: [IRanges](http://bioconductor.org/packages/2.3/bioc/html/IRanges.html)
@@ -170,7 +163,7 @@ The output files will have the `ReMapped` suffix, so for example, `hihmm.model2.
 
 ### Results
 
-The following image shows a screenshot of the IGV Genome Browser for fly showing the different types of `.bed` files that are produced from Steps 3, 5 and 6 respectively.
+The following image shows a screenshot of the IGV Genome Browser for fly showing the different types of .bed files that are produced from Steps 3, 5 and 6 respectively. Note that the colours for each state in the recoloured and remapped bed files correspond to those in the emission matrix, with the unmappable state 0 coloured as black.
 
 ![](https://dl.dropboxusercontent.com/u/5327300/hihmm/instruction/fig8.png)
 
