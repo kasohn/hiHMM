@@ -4,8 +4,7 @@
 
 * [About](#about)
 * [Installation](#installation)
-* [A brief instruction of how to run hiHMM using bash script](#a-brief-instruction-of-how-to-run-hihmm-using-bash-script)
-* [More detailed instruction of how to use hiHMM as an example](#more-detailed-instruction-of-how-to-run-hihmm-as-an-example)
+* [An instruction of how to use hiHMM as an example](#an-instruction-of-how-to-run-hihmm-as-an-example)
 	* [Step 1: Create hiHMM input files](#step-1-create-hihmm-input-files)
 	* [Step 2: Remove unmappable regions using hiHMM_Pre1.R](#step-2-remove-unmappable-regions-using-hihmm_pre1r)
 	* [Step 3: Run hiHMM using driv_hihmm.m](#step-3-run-hihmm-using-driv_hihmmm)
